@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Random Genres{% endblock %}
+
+{% block body %}
+    <h1>Random Genres</h1>
+    <ul>
+        {% for genre in genres %}
+            <li>{{genre}}</li>
+        {% endfor %}
+    <ul>
+{% endblock %}
