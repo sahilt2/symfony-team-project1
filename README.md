@@ -17,9 +17,9 @@ Genre and story endpoints can be fed an additional parameter for more than one r
 
 ## Project navigation
 
-- Home page '/genrenator'
-- Genre page '/genrenator/genre'
-- Story page '/genrenator/story'
+- Home page '/home'
+- Genre page '/home/genre'
+- Story page '/home/story'
 
 Homepage has links to genre and story pages, info about the app/website (e.g. "Welcome to [app name]. With the help of the Genrenator API, random genres and genre stories are generated") and it would be nice to also include the total count of genres generated. Genre page contains a list of random genres and story page random genre stories.
 
@@ -31,7 +31,7 @@ Simple starting point for the project. Don't hesitate to experiment and try out 
 
 Name: GenrenatorController, has functions for home, genre and story.
 
-In templates we should have genrenator folder that contains the following twigs:
+In templates we should have genre folder that contains the following twigs:
 
 - index.html.twig (home)
 - genre.html.twig (genre)
@@ -40,10 +40,12 @@ In templates we should have genrenator folder that contains the following twigs:
 ### Service
 
 - GenreService: getGenres (endpoint: https://binaryjazz.us/wp-json/genrenator/v1/genre/10/)
-- StoryService: getStorys (endpoint: https://binaryjazz.us/wp-json/genrenator/v1/story/10/)
+- StoryService: getStories (endpoint: https://binaryjazz.us/wp-json/genrenator/v1/story/10/)
 
 Both return an array.
 
 ### Install packages in local machine
 
-- composer install
+```
+composer install
+```
