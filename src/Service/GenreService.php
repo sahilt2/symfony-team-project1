@@ -10,26 +10,23 @@ use UnexpectedValueException;
 
 class GenreService
 {
-    private string $genreEndpoint;
+    private  $genreData;
 
-    public function __construct(private HttpClientInterface $httpClient)
+    public function __construct(private HttpClientInterface $data)
     {
-        $this->genreEndpoint = 'https://binaryjazz.us/wp-json/genrenator/v1/genre/10';
+        $this->genreData = $data;
     }
 
-    public function getGenres(): array
+    public function getGenres()
     {
-        $response = $this->httpClient->request(
-            Request::METHOD_GET,
-            $this->genreEndpoint
-        );
+        $response = $this->genreData->request(
+            Request::METHOD_GET, 'https://binaryjazz.us/wp-json/genrenator/v1/genre/10');
         $responseData = $response->toArray();
-        $genres = $responseData;
 
-        if (empty($genres)) {
+        if (empty($responseData)) {
             throw new UnexpectedValueException('No races found.');
         }
 
-        return $genres;
+        return $responseData;
     }
 }

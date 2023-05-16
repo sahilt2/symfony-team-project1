@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class GenrenatorController extends AbstractController
 {
-    #[Route('/home', name: 'app')]
+    #[Route('/', name: 'app')]
     public function index(): Response
     {
         return $this->render('genre/index.html.twig', [
@@ -18,7 +18,7 @@ class GenrenatorController extends AbstractController
         ]);
     }
 
-    #[Route('/home/genre', name: 'app_genre')]
+    #[Route('/genre', name: 'app_genre')]
     public function genre(GenreService $genreService): Response
     {
         $genres = $genreService->getGenres();
@@ -27,7 +27,7 @@ class GenrenatorController extends AbstractController
         ]);
     }
 
-    #[Route('/home/story', name: 'app_story')]
+    #[Route('/story', name: 'app_story')]
     public function story(StoryService $storyService): Response
     {
         $stories = $storyService->getStories();
