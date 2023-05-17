@@ -5,7 +5,7 @@
 }
 
 header {
-  background-color: #1f1f1f;
+  background-color: #000;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -15,6 +15,16 @@ header {
 
 .site-info{
   margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+.site-info a{
+  display: block;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+body{
+  background-color: #1f1f1f;
 }
 
 
@@ -23,6 +33,7 @@ nav ul li {
 }
 main{
   margin: 2rem;
+  background-color: #1f1f1f;
 }
 main ul li{
   margin: 1rem;
@@ -30,4 +41,105 @@ main ul li{
 a {
   color: white;
   text-decoration: none;
+}
+
+.homepage-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.homepage-container h2{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.box{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  color: #fff;
+  
+}
+
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+video {
+  /** Simulationg background-size: cover */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.video-wrapper {
+  /* Telling our absolute positioned video to 
+  be relative to this element */
+  position: relative;
+
+  width: 400px;
+  height: 200px;
+
+  /* Will not allow the video to overflow the 
+  container */
+  overflow: hidden;
+
+  /* Centering the container's content vertically 
+  and horizontally */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  /** Simulationg background-size: cover */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box-text{
+  color: #fff;
+  z-index: 100;
+  position: absolute;
+  bottom: 2rem;
+  line-height: 2.3rem;
+}
+
+.box-text a, .nav-button{
+  background-color: yellow;
+  border-radius: 25px;
+  border: 2px solid #000;
+  padding: 0.7rem;
+  margin: 1rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.text-content-area{
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 5px;
+  width: fit-content;
+  margin: auto;
+}
+h1{
+  text-align: center;
 }

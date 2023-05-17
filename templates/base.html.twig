@@ -20,15 +20,17 @@
 	<body>
 	<header>
 	<div class='site-info'>
-		<h1>Genrenator</h1>
+		<a href='/'>Rhythmic Roulette</a>
 		{% block pagedescription %}
-		<small>Random genres and genre stories</small>
+		<small>Random genres and genre stories generator</small>
 		{% endblock pagedescription %}
 	</div>
 		<nav>
 			<ul>
 				<li><ahref="{{path('app_story')}}"></a></li>
 			</ul>
+			{% block navbutton %}
+			{% endblock navbutton %}
 		</nav>
 	</header>
 	<main>

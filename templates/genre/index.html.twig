@@ -1,1 +1,46 @@
 {% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+<main>
+    <div class='homepage-container'>
+     <section>
+            <h2>Genres</h2>
+            <div class="video-wrapper">
+            <video autoplay muted loop id="myVideo">
+            <source src='https://www.shutterstock.com/shutterstock/videos/1061377330/preview/stock-footage-black-vinyl-record-spinning-and-play-music-on-the-dj-turntable-with-colorful-label-in-the-center-of.webm'>
+            Your browser does not support HTML5 video.
+            </video>
+             <div class="box-text">
+          
+            <a href="/genre">Explore Genres</a>
+            </div>
+            </div>
+            
+           
+        </section>
+
+     <section>
+            <h2>Genre Stories</h2>
+            <div class="video-wrapper">
+            <video autoplay muted loop id="myVideo">
+            <source src='https://www.shutterstock.com/shutterstock/videos/1049568571/preview/stock-footage-everyone-has-a-story-word-closeup-being-typing-and-centered-on-a-sheet-of-paper-on-old-vintage.webm'>
+            Your browser does not support HTML5 video.
+            </video>
+            <div class="box-text">
+            <a href="/story">Explore Stories</a>
+            </div>
+            </div>
+           
+            
+            
+        </section>
+       
+        
+    </div>
+</main>
+
+
+{% endblock body %}
