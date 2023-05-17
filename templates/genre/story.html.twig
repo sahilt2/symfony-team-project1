@@ -1,9 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Random Genre Stories{% endblock %}
-
+{% block pagedescription %}
+		<small>Refresh page to generate random stories</small>
+		{% endblock pagedescription %}
 {% block body %}
-    <h1>Random Storys</h1>
+    <h1>Random Stories</h1>
     <ul>
         {% for story in stories %}
             <li>{{story}}</li>

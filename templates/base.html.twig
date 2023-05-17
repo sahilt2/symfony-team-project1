@@ -18,13 +18,22 @@
 		{% endblock %}
 	</head>
 	<body>
+	<header>
+	<div class='site-info'>
+		<h1>Genrenator</h1>
+		{% block pagedescription %}
+		<small>Random genres and genre stories</small>
+		{% endblock pagedescription %}
+	</div>
 		<nav>
-			<p>Genrenator</p>
 			<ul>
 				<li><ahref="{{path('app_story')}}"></a></li>
 			</ul>
 		</nav>
-
+	</header>
+	<main>
 		{% block body %}{% endblock %}
+	</main>
+
 	</body>
 </html>
