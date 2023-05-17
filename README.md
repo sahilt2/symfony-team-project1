@@ -17,9 +17,8 @@ Genre and story endpoints can be fed an additional parameter for more than one r
 
 ## Project navigation
 
-- Home page '/home'
-- Genre page '/home/genre'
-- Story page '/home/story'
+- Genre page '/genre'
+- Story page '/story'
 
 Homepage has links to genre and story pages, info about the app/website (e.g. "Welcome to [app name]. With the help of the Genrenator API, random genres and genre stories are generated") and it would be nice to also include the total count of genres generated. Genre page contains a list of random genres and story page random genre stories.
 
