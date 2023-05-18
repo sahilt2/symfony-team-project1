@@ -1,19 +1,22 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Random Genre Stories{% endblock %}
+{% block title %}Random Genre Stories
+{% endblock %}
 {% block pagedescription %}
-		<small>Refresh page to generate random stories</small>
+	<small>Refresh page to generate random stories</small>
 {% endblock pagedescription %}
 {% block navbutton %}
-<a href="/genre" class="nav-button">Go to Genres</a>
+	<a href="/genre" class="nav-button">Go to Genres</a>
 {% endblock navbutton %}
 {% block body %}
-<div class="text-content-area">
-    <h1>Random Stories</h1>
-    <ul>
-        {% for story in stories %}
-            <li>{{story}}</li>
-        {% endfor %}
-    <ul>
-</div>
-{% endblock %}
+	<div class='main'>
+		<div class="text-content-area">
+			<h1>Random Stories</h1>
+			<ul>
+				{% for story in stories %}
+					<li>{{story}}</li>
+				{% endfor %}
+				<ul></div>
+				<button class='refresh-button' onclick="window.location.reload();">Refresh Stories</button>
+			</div>
+		{% endblock %}

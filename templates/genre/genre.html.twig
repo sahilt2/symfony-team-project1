@@ -4,20 +4,22 @@
 {% endblock %}
 
 {% block pagedescription %}
-		<small>Refresh page to generate random genres</small>
+	<small>Refresh page to generate random genres</small>
 {% endblock pagedescription %}
 {% block navbutton %}
-<a href="/story" class="nav-button">Go to Stories</a>
+	<a href="/story" class="nav-button">Go to Stories</a>
 {% endblock navbutton %}
 
 {% block body %}
-<div class='text-content-area'>
+	<div class='main'>
+		<div class='text-content-area'>
 
-	<h1>Random Genres</h1>
-	<ul>
-		{% for genre in genres %}
-			<li>{{genre | capitalize}}</li>
-		{% endfor %}
-		<ul>
-</div>
-{% endblock %}
+			<h1>Random Genres</h1>
+			<ul>
+				{% for genre in genres %}
+					<li>{{genre | capitalize}}</li>
+				{% endfor %}
+				<ul></div>
+				<button class='refresh-button' onclick="window.location.reload();">Refresh Genres</button>
+			</div>
+		{% endblock %}
