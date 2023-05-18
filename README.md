@@ -6,45 +6,39 @@ The goal of this project is to use Symfony framework to build a simple static we
 
 This website uses [Genrenator API](https://binaryjazz.us/genrenator-api/) to display random genres and genre stories.
 
-## API endpoints
+## Built with
 
-Genre and story endpoints can be fed an additional parameter for more than one result which will return an array of chosen amount of genres/stories.
+<a href="https://symfony.com/"><img src="https://img.shields.io/badge/Symfony-000000.svg?style=for-the-badge&logo=Symfony&logoColor=white"/></a>
 
-- https://binaryjazz.us/wp-json/genrenator/v1/genre/ random genre
-- https://binaryjazz.us/wp-json/genrenator/v1/story/ random genre story
-- https://binaryjazz.us/wp-json/genrenator/v1/story/25/ will return an array of 25 stories
-- https://binaryjazz.us/wp-json/genrenator/v1/count total count of genres created by genrenator
+## Setup and Usage
 
-## Project navigation
-
-- Genre page '/genre'
-- Story page '/story'
-
-Homepage has links to genre and story pages, info about the app/website (e.g. "Welcome to [app name]. With the help of the Genrenator API, random genres and genre stories are generated") and it would be nice to also include the total count of genres generated. Genre page contains a list of random genres and story page random genre stories.
-
-## Starting point
-
-Simple starting point for the project. Don't hesitate to experiment and try out the things we've learned in questions and formula practice apps.
-
-### Controller
-
-Name: GenrenatorController, has functions for home, genre and story.
-
-In templates we should have genre folder that contains the following twigs:
-
-- index.html.twig (home)
-- genre.html.twig (genre)
-- story.html.twig (story)
-
-### Service
-
-- GenreService: getGenres (endpoint: https://binaryjazz.us/wp-json/genrenator/v1/genre/10/)
-- StoryService: getStories (endpoint: https://binaryjazz.us/wp-json/genrenator/v1/story/10/)
-
-Both return an array.
-
-### Install packages in local machine
-
+- Clone repository
+```
+git clone https://github.com/sahilt2/symfony-team-project1.git
+```
+- Install packages
 ```
 composer install
 ```
+- Start the server
+```
+symfony server:start
+```
+
+### Project navigation
+
+- Home page: http://127.0.0.1:8000/
+- Genre page: http://127.0.0.1:8000/genre
+- Story page: http://127.0.0.1:8000/story
+
+Homepage has links to genre and story page and info about the API. Genre page contains a list of random genres and story page random genre stories.
+
+## Acknowledgments
+
+- Creators of [Genrenator API](https://binaryjazz.us/genrenator-api/) 🎵
+
+## Authors
+
+- Michael Akerele
+- Julianna Molnár
+- Sahil Thapa
