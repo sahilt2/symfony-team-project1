@@ -39,6 +39,6 @@ Homepage has links to genre and story page and info about the API. Genre page co
 
 ## Authors
 
-- Michael Akerele
-- Julianna Molnár
-- Sahil Thapa
+- Michael Akerele [@stacknatic](https://github.com/stacknatic)
+- Julianna Molnár [@julilan](https://github.com/julilan)
+- Sahil Thapa [@sahilt2](https://github.com/sahilt2)
