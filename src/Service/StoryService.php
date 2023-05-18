@@ -24,12 +24,11 @@ class StoryService
             $this->storyEndpoint
         );
         $responseData = $response->toArray();
-        $stories = $responseData;
 
-        if (empty($stories)) {
-            throw new UnexpectedValueException('No races found.');
+        if (empty($responseData)) {
+            throw new UnexpectedValueException('No stories found.');
         }
 
-        return $stories;
+        return $responseData;
     }
 }
