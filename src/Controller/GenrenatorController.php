@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Service\GenreService;
 use App\Service\StoryService;
+use App\Service\CountService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -11,10 +12,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class GenrenatorController extends AbstractController
 {
     #[Route('/', name: 'app')]
-    public function index(): Response
+    public function index(CountService $countService): Response
     {
+        $totalCount = $countService->getTotalCount();
         return $this->render('genre/index.html.twig', [
-            'message' => 'Welcome to your new controller!',
+            'totalCount' => $totalCount,
         ]);
     }
 

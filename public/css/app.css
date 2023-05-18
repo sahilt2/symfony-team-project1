@@ -143,3 +143,25 @@ video {
 h1{
   text-align: center;
 }
+
+.api-info {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: #000;
+  text-align: center;
+}
+
+.api-info p {
+  padding: 1.5rem;
+}
+
+.api-info a {
+  color: lightblue;
+}
+
+.api-info a:hover {
+  text-decoration: underline;
+}
