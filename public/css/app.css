@@ -130,6 +130,7 @@ video {
   margin: 1rem;
   color: #000;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .text-content-area {
@@ -167,6 +168,7 @@ h1 {
 
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
